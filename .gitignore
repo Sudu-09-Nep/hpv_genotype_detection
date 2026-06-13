@@ -1,24 +1,38 @@
-# Ignore Nextflow logs and cache
+# Nextflow logs and cache
 .nextflow.log*
+.nextflow/
 .nextflow/cache/
 .nextflow/history
 
-# Ignore DS_Store files
+# macOS junk
 .DS_Store
 *.DS_Store
 
-# Ignore large data files
-data/raw_fastq/*.fastq
-data/trimmed/*.fastq
-data/alignment/*.bam
-data/alignment/*.bai
+# Ignore everything inside data subdirs, but keep the dirs via .gitkeep
 
-# Ignore reference genome indices (large)
-data/reference/*.amb
-data/reference/*.ann
-data/reference/*.bwt
-data/reference/*.pac
-data/reference/*.sa
+data/raw_fastq/*
+!data/raw_fastq/.gitkeep
 
-# Ignore work directory
+data/reference/*
+!data/reference/.gitkeep
+
+data/trimmed/*
+!data/trimmed/.gitkeep
+
+data/alignment/*
+!data/alignment/.gitkeep
+
+data/coverage/*
+!data/coverage/.gitkeep
+
+data/logs/*
+!data/logs/.gitkeep
+
+data/reports/*
+!data/reports/.gitkeep
+
+data/fastqc/*
+!data/fastqc/.gitkeep
+
+# Nextflow work directory
 work/
