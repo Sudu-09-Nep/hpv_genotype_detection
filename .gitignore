@@ -7,11 +7,18 @@
 .DS_Store
 *.DS_Store
 
-# Ignore large data files (optional - keep if you want example outputs)
-# data/raw_fastq/*.fastq
-# data/trimmed/*.fastq
-# data/alignment/*.bam
-# data/alignment/*.bai
+# Ignore large data files
+data/raw_fastq/*.fastq
+data/trimmed/*.fastq
+data/alignment/*.bam
+data/alignment/*.bai
+
+# Ignore reference genome indices (large)
+data/reference/*.amb
+data/reference/*.ann
+data/reference/*.bwt
+data/reference/*.pac
+data/reference/*.sa
 
 # Ignore work directory
 work/
