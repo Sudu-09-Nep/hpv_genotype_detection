@@ -47,7 +47,7 @@ This repository is designed so that a user can clone the project, install a smal
 
 ```bash
 git clone https://github.com/Sudu-09-Nep/hpv_genotype_detection.git
-cd hpv_ngs_pipeline
+cd hpv_genotype_detection
 ```
 
 ### 2. Install dependencies
