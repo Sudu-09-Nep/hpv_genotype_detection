@@ -1,9 +1,17 @@
+# Ignore Nextflow logs and cache
+.nextflow.log*
+.nextflow/cache/
+.nextflow/history
+
+# Ignore DS_Store files
+.DS_Store
+*.DS_Store
+
+# Ignore large data files (optional - keep if you want example outputs)
+# data/raw_fastq/*.fastq
+# data/trimmed/*.fastq
+# data/alignment/*.bam
+# data/alignment/*.bai
+
+# Ignore work directory
 work/
-data/raw_fastq/
-data/reference/
-*.bam
-*.bam.bai
-*.fastq
-*.html
-*.json
-multiqc_data/
