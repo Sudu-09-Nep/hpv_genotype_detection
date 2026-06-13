@@ -1,0 +1,194 @@
+Jun-13 15:36:20.158 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/hpv_ngs.nf
+Jun-13 15:36:20.261 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.3
+Jun-13 15:36:20.286 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/sudarshanaryal/.nextflow/plugins; core-plugins: nf-amazon@3.9.1,nf-azure@1.22.5,nf-cloudcache@0.6.0,nf-codecommit@0.5.2,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.20.1,nf-tower@1.28.0,nf-wave@1.21.0
+Jun-13 15:36:20.318 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-13 15:36:20.319 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-13 15:36:20.321 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Jun-13 15:36:20.334 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Jun-13 15:36:20.451 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Jun-13 15:36:20.454 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-13 15:36:20.476 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/nextflow.config
+Jun-13 15:36:20.477 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/nextflow.config
+Jun-13 15:36:20.480 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Jun-13 15:36:20.492 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jun-13 15:36:20.807 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-13 15:36:20.807 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-13 15:36:20.821 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/sudarshanaryal/.nextflow/secrets/store.json
+Jun-13 15:36:20.823 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4c7e978c] - activable => nextflow.secret.LocalSecretsProvider@4c7e978c
+Jun-13 15:36:20.835 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/hpv_ngs.nf` [nauseous_heyrovsky] - revision: b474043cd0
+Jun-13 15:36:20.888 [main] DEBUG nextflow.Session - Session UUID: 63e94538-4e71-42e2-a4ee-0064fafa4cdf
+Jun-13 15:36:20.889 [main] DEBUG nextflow.Session - Run name: nauseous_heyrovsky
+Jun-13 15:36:20.889 [main] DEBUG nextflow.Session - Executor pool size: 10
+Jun-13 15:36:20.896 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-13 15:36:20.899 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jun-13 15:36:20.923 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.3 build 12259
+  Created: 28-05-2026 08:48 UTC (14:18 IST)
+  System: Mac OS X 15.5
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 23.0.2+7
+  Encoding: UTF-8 (UTF-8)
+  Process: 16747@Mac.mshome.net [192.168.137.176]
+  CPUs: 10 - Mem: 16 GB (905 MB) - Swap: 0 (0)
+Jun-13 15:36:20.933 [main] DEBUG nextflow.Session - Work-dir: /Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/work [Mac OS X]
+Jun-13 15:36:20.933 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/workflows/bin
+Jun-13 15:36:20.940 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-13 15:36:20.946 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jun-13 15:36:20.947 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Jun-13 15:36:20.979 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-13 15:36:20.987 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 11; maxThreads: 1000
+Jun-13 15:36:21.037 [main] DEBUG nextflow.Session - Session start
+Jun-13 15:36:21.041 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Jun-13 15:36:21.269 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-13 15:36:21.372 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-13 15:36:21.373 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-13 15:36:21.381 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-13 15:36:21.387 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=10; memory=16 GB; capacity=10; pollInterval=100ms; dumpInterval=5m
+Jun-13 15:36:21.390 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jun-13 15:36:21.423 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'RUN_HPV_PIPELINE': maxForks=0; fair=false; array=0
+Jun-13 15:36:21.463 [main] INFO  nextflow.script.BaseScript - 
+Jun-13 15:36:21.463 [main] INFO  nextflow.script.BaseScript - === HPV NGS pipeline (Nextflow wrapper) finished ===
+Jun-13 15:36:21.464 [main] INFO  nextflow.script.BaseScript - Outputs organized under data/trimmed, data/alignment, data/coverage, data/logs, data/reports
+Jun-13 15:36:21.465 [main] DEBUG nextflow.Session - Process names: RUN_HPV_PIPELINE
+Jun-13 15:36:21.466 [main] DEBUG nextflow.Session - Igniting dataflow network (1)
+Jun-13 15:36:21.467 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RUN_HPV_PIPELINE
+Jun-13 15:36:21.468 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Main: /Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/workflows/hpv_ngs.nf
+Jun-13 15:36:21.468 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jun-13 15:36:21.468 [main] DEBUG nextflow.Session - Session await
+Jun-13 15:36:21.771 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-13 15:36:21.773 [Task submitter] INFO  nextflow.Session - [3b/32212c] Submitted process > RUN_HPV_PIPELINE (7936_S200)
+Jun-13 15:36:35.714 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: RUN_HPV_PIPELINE (7936_S200); status: COMPLETED; exit: 1; error: -; workDir: /Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/work/3b/32212c71fbed3605e62983fddca289]
+Jun-13 15:36:35.715 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jun-13 15:36:35.722 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=RUN_HPV_PIPELINE (7936_S200); work-dir=/Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/work/3b/32212c71fbed3605e62983fddca289
+  error [nextflow.exception.ProcessFailedException]: Process `RUN_HPV_PIPELINE (7936_S200)` terminated with an error exit status (1)
+Jun-13 15:36:35.737 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'RUN_HPV_PIPELINE (7936_S200)'
+
+Caused by:
+  Process `RUN_HPV_PIPELINE (7936_S200)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  echo "=== Running Karkinos HPV pipeline for sample: 7936_S200 ==="
+  
+  cd "/Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline"
+  
+  chmod +x bin/run_hpv_pipeline.sh
+  
+  ./bin/run_hpv_pipeline.sh         "7936_S200"         "PE"         "/Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/data/raw_fastq/7936_S200_L008_R1_001.fastq"         "/Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/data/raw_fastq/7936_S200_L008_R2_001.fastq"         "data/reference/reference.fasta"         "20"         "8"         "36"
+
+Command exit status:
+  1
+
+Command output:
+  === Running Karkinos HPV pipeline for sample: 7936_S200 ===
+  ═══════════════════════════════════════════════════════════
+    Karkinos HPV Genotyping Pipeline
+    Sample: 7936_S200
+    Mode: PE
+    Reference: reference.fasta
+    MAPQ Threshold: data/reference/reference.fasta
+    Threads: 20
+    Min Read Length: 8
+  ═══════════════════════════════════════════════════════════
+  [1/6] Running fastp QC...
+  ✓ fastp complete: data/trimmed/7936_S200_fastp.html
+  [2/6] Preparing reference genome...
+    Indexing reference genome with bwa...
+
+Command error:
+  total bases: 123696029
+  Q20 bases: 120487276(97.4059%)
+  Q30 bases: 112372537(90.8457%)
+  Q40 bases: 112372537(90.8457%)
+  
+  Read2 before filtering:
+  total reads: 819179
+  total bases: 123696029
+  Q20 bases: 121938381(98.5791%)
+  Q30 bases: 116595959(94.2601%)
+  Q40 bases: 116595959(94.2601%)
+  
+  Read1 after filtering:
+  total reads: 791852
+  total bases: 94014849
+  Q20 bases: 93619657(99.5796%)
+  Q30 bases: 90799826(96.5803%)
+  Q40 bases: 90799826(96.5803%)
+  
+  Read2 after filtering:
+  total reads: 791852
+  total bases: 92844997
+  Q20 bases: 92463855(99.5895%)
+  Q30 bases: 89795587(96.7156%)
+  Q40 bases: 89795587(96.7156%)
+  
+  Filtering result:
+  reads passed filter: 1583704
+  reads failed due to low quality: 124
+  reads failed due to too many N: 0
+  reads failed due to too short: 45410
+  reads failed due to adapter dimer: 9120
+  reads with adapter trimmed: 1554315
+  bases trimmed due to adapters: 36712035
+  reads corrected by overlap analysis: 50136
+  bases corrected by overlap analysis: 57424
+  
+  Duplication rate: 84.675%
+  
+  Insert size peak (evaluated by paired-end reads): 139
+  
+  JSON report: data/trimmed/7936_S200_fastp.json
+  HTML report: data/trimmed/7936_S200_fastp.html
+  
+  fastp --thread 20 --detect_adapter_for_pe --overrepresentation_analysis --correction --cut_right --length_required 8 --html data/trimmed/7936_S200_fastp.html --json data/trimmed/7936_S200_fastp.json --report_title HPV Sample 7936_S200 QC Report -i /Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/data/raw_fastq/7936_S200_L008_R1_001.fastq -I /Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/data/raw_fastq/7936_S200_L008_R2_001.fastq -o data/trimmed/7936_S200_R1_paired.fastq -O data/trimmed/7936_S200_R2_paired.fastq --unpaired1 data/trimmed/7936_S200_R1_unpaired.fastq --unpaired2 data/trimmed/7936_S200_R2_unpaired.fastq 
+  fastp v1.3.3, time used: 14 seconds
+  ✓ fastp complete: data/trimmed/7936_S200_fastp.html
+  [2/6] Preparing reference genome...
+    Indexing reference genome with bwa...
+  [bwa_idx_build] fail to open file '/Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/data/reference/reference.fasta' : No such file or directory
+
+Work dir:
+  /Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/work/3b/32212c71fbed3605e62983fddca289
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Jun-13 15:36:35.743 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jun-13 15:36:35.744 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `RUN_HPV_PIPELINE (7936_S200)` terminated with an error exit status (1)
+Jun-13 15:36:35.765 [TaskFinalizer-1] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=13.9s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jun-13 15:36:35.800 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jun-13 15:36:35.800 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-13 15:36:35.801 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=13.9s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jun-13 15:36:35.801 [TaskFinalizer-1] DEBUG nextflow.Session - null
+java.lang.InterruptedException
+	at java.base/java.lang.Object.wait0(Native Method)
+	at java.base/java.lang.Object.wait(Object.java:378)
+	at java.base/java.lang.Thread.join(Thread.java:2017)
+	at java.base/java.lang.Thread.join(Thread.java:2093)
+	at nextflow.trace.AnsiLogObserver.onFlowComplete(AnsiLogObserver.groovy:559)
+	at nextflow.Session$_notifyFlowComplete_lambda38.doCall(Session.groovy:1093)
+	at nextflow.Session.notifyEvent(Session.groovy:1123)
+	at nextflow.Session.notifyFlowComplete(Session.groovy:1093)
+	at nextflow.Session.shutdown0(Session.groovy:775)
+	at nextflow.Session.abort(Session.groovy:830)
+	at nextflow.Session.fault(Session.groovy:792)
+	at nextflow.processor.TaskPollingMonitor.finalizeTask(TaskPollingMonitor.groovy:753)
+	at nextflow.processor.TaskPollingMonitor.safeFinalizeTask(TaskPollingMonitor.groovy:736)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1341)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1096)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+	at nextflow.processor.TaskPollingMonitor$_checkTaskStatus_lambda8.doCall(TaskPollingMonitor.groovy:726)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Jun-13 15:36:35.970 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jun-13 15:36:35.981 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

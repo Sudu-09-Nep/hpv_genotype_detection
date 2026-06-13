@@ -1,0 +1,2 @@
+sample_id,mode,fastq_r1,fastq_r2
+7936_S200,PE,/Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/data/raw_fastq/7936_S200_L008_R1_001.fastq,/Users/sudarshanaryal/Desktop/test/hpv_ngs_pipeline/data/raw_fastq/7936_S200_L008_R2_001.fastq

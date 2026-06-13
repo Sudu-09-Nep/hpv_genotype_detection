@@ -1,7 +1,9 @@
-data/
-*.fastq
-*.fastq.gz
-*.bam
-*.bai
 work/
-.nextflow.log
+data/raw_fastq/
+data/reference/
+*.bam
+*.bam.bai
+*.fastq
+*.html
+*.json
+multiqc_data/
