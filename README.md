@@ -340,12 +340,6 @@ Cluster users can adapt `nextflow.config` to their scheduler (e.g. SLURM, SGE) b
 
 ---
 
-## License
-
-This project is distributed under the **MIT License**. See the `LICENSE` file for the full text.
-
----
-
 ## Citation
 
 If you use this pipeline in research or publications, please cite:
@@ -362,4 +356,3 @@ If you use this pipeline in research or publications, please cite:
 ## Acknowledgments
 
 This pipeline builds on widely used open-source tools (fastp, BWA, SAMtools, Nextflow) and follows best practices inspired by established workflow collections such as nf-core.[web:193][web:195]
----
