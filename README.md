@@ -65,7 +65,7 @@ cd hpv_ngs_pipeline
 ### Install dependencies (conda, recommended)
 
 ```bash
-conda create -n hpv_ngs fastp bwa samtools
+conda create -n hpv_ngs fastp bwa samtools multiqc 
 conda activate hpv_ngs
 
 # Install Nextflow
