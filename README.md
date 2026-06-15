@@ -156,6 +156,11 @@ From the project root:
 nextflow run workflows/hpv_ngs.nf
 ```
 
+**To Generate the Multiqc report
+```bash
+bin/generate_multiqc_all.sh
+```
+
 The default configuration (`nextflow.config`) uses:
 
 - `data/samplesheet.csv` for sample metadata  
