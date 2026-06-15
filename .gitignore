@@ -36,3 +36,4 @@ data/fastqc/*
 
 # Nextflow work directory
 work/
+.nextflow*
